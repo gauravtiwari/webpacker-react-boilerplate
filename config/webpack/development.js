@@ -5,11 +5,7 @@ const sharedConfig = require('./shared.js')
 const { settings, output } = require('./configuration.js')
 
 module.exports = merge(sharedConfig, {
-  devtool: 'cheap-eval-source-map',
-
-  stats: {
-    errorDetails: true
-  },
+  devtool: 'source-map',
 
   output: {
     pathinfo: true
@@ -27,6 +23,9 @@ module.exports = merge(sharedConfig, {
     historyApiFallback: true,
     watchOptions: {
       ignored: /node_modules/
+    },
+    stats: {
+      errorDetails: true
     }
   }
 })
