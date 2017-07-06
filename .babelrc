@@ -15,7 +15,6 @@
   ],
   "plugins": [
     "syntax-dynamic-import",
-    "transform-es2015-modules-commonjs",
     "dynamic-import-node",
     "transform-object-rest-spread",
     ["module-resolver", {
